@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tensor-forge"
+version = "0.1.0"
+description = "Deep-Kernel Fused JIT & Memory Bandwidth Optimizer for Frontier AI Hardware (Tenstorrent, Apple Silicon, Triton, CUDA)."
+readme = "README.md"
+authors = [
+  { name = "Ahmed Hassan", email = "ahmed@a2zsoc.com" }
+]
+license = { text = "Apache-2.0" }
+keywords = [
+  "kernel-fusion",
+  "triton-kernels",
+  "cuda",
+  "apple-silicon-mlx",
+  "tenstorrent",
+  "riscv-vector",
+  "fp8-quantization",
+  "flash-attention",
+  "logaddexp-overflow",
+  "memory-bandwidth-optimization",
+  "roofline-model",
+  "compiler-optimization",
+  "deep-learning-compiler",
+  "quantization"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+tensor-forge = "tensor_forge.cli:main"
